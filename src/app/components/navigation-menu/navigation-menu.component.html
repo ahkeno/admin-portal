@@ -14,13 +14,13 @@
   <div class="navigation-list">
     <ul>
       <!-- TO DO: menu list come from  -->
-      <li>Dashboard</li>
+      <li routerLink="/dashboard">Dashboard</li>
       <li>Admin User Management
         <ul>
-          <li (click)="loadMenu('user');">
+          <li routerLink="/user">
             User
           </li>
-          <li (click)="loadMenu('role');">
+          <li routerLink="/role">
             Roles 
           </li>
           <li>

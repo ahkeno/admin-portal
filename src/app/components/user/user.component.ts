@@ -10,8 +10,13 @@ export class UserComponent {
   showUserList : boolean = true;
 
   createNewUserClick(){
-    this.showCreateNewUser = !this.showCreateNewUser;
-    this.showUserList = !this.showUserList;
+    this.showCreateNewUser = true;
+    this.showUserList = false;
   }
+  newUserBackClick(){
+    this.showCreateNewUser = false;
+    this.showUserList = true;
+  }
+  
 
 }

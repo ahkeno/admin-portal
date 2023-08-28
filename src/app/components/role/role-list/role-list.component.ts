@@ -28,11 +28,10 @@ export class RoleListComponent {
   displayedColumns: string[] = ['position', 'name'];
   dataSource = [...ELEMENT_DATA];
   @ViewChild(MatTable) table: MatTable<PeriodicElement>;
-  @Output() onCreate = new EventEmitter<string>();
+  @Output() onRoleNewClick = new EventEmitter<string>();
 
   addNewRole() {
-    // Create New User
-    debugger;
-    this.onCreate.emit();
+    // Create New Role
+    this.onRoleNewClick.emit();
   }
 }

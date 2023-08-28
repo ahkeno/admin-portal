@@ -13,21 +13,6 @@ import { CoreModule } from 'src/app/core/core.module';
 
     constructor(){}
     ngOnInit() {}
-    bind(){
-
-    }
-    onNavMenuClick(event:any){
-      if( event == 'user')
-      {
-        this.showUserComponent = true;
-        this. showDashboardCompoent = false;
-        this.showRoleComponent = false;
-      }
-      else if( event == 'role')
-      {
-        this.showUserComponent = false;
-        this. showDashboardCompoent = false;
-        this.showRoleComponent = true;
-      }
-    }
+    bind(){ }
+    
   }

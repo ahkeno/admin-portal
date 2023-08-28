@@ -1,4 +1,11 @@
-<div>
-    <app-user-list *ngIf="showUserList" (onCreate)="createNewUserClick()"></app-user-list>
-    <app-create-new-user *ngIf="showCreateNewUser"></app-create-new-user>
+<div class="two-column-layout">
+    <div>
+        <app-navigation-menu></app-navigation-menu>
+    </div>
+    <div class="side-component">
+        <app-user-list *ngIf="showUserList" (onCreate)="createNewUserClick()"></app-user-list>
+        <app-create-new-user *ngIf="showCreateNewUser" (onBack)="newUserBackClick()"></app-create-new-user>
+    </div>
 </div>
+
+

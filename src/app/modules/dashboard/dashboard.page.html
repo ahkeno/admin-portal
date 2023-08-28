@@ -1,11 +1,9 @@
-<div class="dashboard-page">
+<div class="two-column-layout">
     <div>
-        <app-navigation-menu (onMenuClick)="onNavMenuClick($event)"></app-navigation-menu>
+        <app-navigation-menu></app-navigation-menu>
     </div>
     <div class="side-component">
-        <div *ngIf="showDashboardCompoent">this is Dashboard componet</div>
-        <app-user *ngIf="showUserComponent"></app-user>
-        <app-role *ngIf="showRoleComponent"></app-role>
+        this is Dashboard componet
     </div>
 </div>
 

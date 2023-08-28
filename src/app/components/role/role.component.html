@@ -1,4 +1,13 @@
-<p> role works</p>
-<app-role-list></app-role-list>
-<app-create-new-role></app-create-new-role>
+<div class="two-column-layout">
+    <div>
+        <app-navigation-menu></app-navigation-menu>
+    </div>
+    <div class="side-component">
+        <app-role-list *ngIf="showRoleList" (onRoleNewClick)="createNewClick()"></app-role-list>
+        <app-create-new-role *ngIf="showCreateNew"></app-create-new-role>
+    </div>
+</div>
+
+
+
 

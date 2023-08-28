@@ -1,6 +1,6 @@
 import { Component,ViewChild,Output, EventEmitter } from '@angular/core';
 import {MatTable, MatTableModule} from '@angular/material/table';
-
+import { UserService } from 'src/app/share/services/user.service';
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -29,13 +29,24 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class UserListComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = [...ELEMENT_DATA];
-
+  users : any[];
   @ViewChild(MatTable) table: MatTable<PeriodicElement>;
   @Output() onCreate = new EventEmitter<string>();
+  constructor(private service: UserService){
 
+  }
+  ngOnInit() {
+    this.getUser();
+  }
+  getUser(){
+   this.users = this.service.getUser();
+   console.log("this.user", this.users);
+  }
   addNewUser() {
     // Create New User
     debugger;
     this.onCreate.emit();
   }
+
+
 }

@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./role.component.scss']
 })
 export class RoleComponent {
+  showRoleList: boolean = true;
+  showCreateNew: boolean = false;
+
+  createNewClick(){
+    this.showRoleList = false;
+    this.showCreateNew = true;
+  }
 
 }

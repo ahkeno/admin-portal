@@ -4,6 +4,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatMenuModule} from '@angular/material/menu';
 // 
 import { LoginPage } from '../modules/login/login.page';
 
@@ -15,7 +19,10 @@ import { LoginPage } from '../modules/login/login.page';
         MatFormFieldModule,
         MatInputModule,
         MatButtonModule,
-        MatIconModule
+        MatIconModule,
+        MatCheckboxModule,
+        MatSidenavModule,
+        MatMenuModule
         ],
     declarations: [],
     providers: []

@@ -1,0 +1,18 @@
+@import './../../styles/utilities/variables.scss';
+
+.navigation-menu{
+    background-color: $primiary-color-black;
+    color: rgba(255,255,255,.5);
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    .logo img{
+        border-radius: 50%;
+    }
+    .user-info {
+        img{
+        border-radius: 50%;
+        }
+    }
+   
+}

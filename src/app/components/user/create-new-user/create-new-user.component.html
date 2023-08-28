@@ -6,25 +6,39 @@
     </ul>
   </div>
   <form [formGroup]="userPofileForm" (ngSubmit)="addNewUser(userPofileForm)">
-    <div>
-      <label>
-        Name:
-        <input formControlName="name" placeholder="Your name">
-      </label>
+    <div class="two-column-equal-layout">
+      <div>
+        <div>
+          <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" placeholder="Your name">
+          </mat-form-field>
+        </div>
+        <div>
+          <!-- TO DO : check email validation -->
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" type="email"placeholder="Your name">
+        </mat-form-field>
+        </div>
+      </div>
+      <div>
+        <div>
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" type="password" >
+          </mat-form-field>
+        </div>
+        <div>
+          <!-- TO DO : role come from role data as drop down -->
+        <mat-form-field class="example-full-width">
+          <mat-label>Role</mat-label>
+          <input matInput formControlName="role" type="text" >
+        </mat-form-field>
+        </div>
+      </div>
     </div>
-    <div>
-      <label>
-        Email:
-        <input formControlName="email" type="email" placeholder="Your email">
-      </label>
-    </div>
-    <div>
-      <label>
-        Password:
-        <input formControlName="password" type="password" placeholder="Your message">
-      </label>
-    </div>
-    <button type="submit"mat-raised-button color="primary" >Add </button>
+   <button type="submit"mat-raised-button color="primary" >Add </button>
   </form>
       
 </div>

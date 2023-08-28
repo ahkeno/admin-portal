@@ -14,6 +14,11 @@ import { CreateNewUserComponent } from './components/user-management/create-new-
 import { RoleComponent } from './components/role/role.component';
 import { RoleListComponent } from './components/role/role-list/role-list.component';
 import { CreateNewRoleComponent } from './components/role/create-new-role/create-new-role.component';
+import { RestaurantManagementComponent } from './components/restaurant-management/restaurant-management.component';
+import { GroupListComponent } from './components/restaurant-management/group-list/group-list.component';
+import { RestaurantListComponent } from './components/restaurant-management/restaurant-list/restaurant-list.component';
+import { OutletListComponent } from './components/restaurant-management/outlet-list/outlet-list.component';
+import { CreateGroupComponent } from './components/restaurant-management/create-group/create-group.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +29,12 @@ import { CreateNewRoleComponent } from './components/role/create-new-role/create
     CreateNewUserComponent,
     RoleComponent,
     RoleListComponent,
-    CreateNewRoleComponent
+    CreateNewRoleComponent,
+    RestaurantManagementComponent,
+    GroupListComponent,
+    RestaurantListComponent,
+    OutletListComponent,
+    CreateGroupComponent
   ],
   imports: [
     BrowserModule,

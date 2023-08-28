@@ -1,9 +1,8 @@
 <div class="demo-button-container">
-    <button mat-raised-button (click)="addData()" class="demo-button">
-      Add data
+    <button mat-raised-button (click)="addNewUser()" class="demo-button">
+      Add New
     </button>
   </div>
-  
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
     <!-- Position Column -->
     <ng-container matColumnDef="position">

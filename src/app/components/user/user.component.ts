@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./user.component.scss']
 })
 export class UserComponent {
+  showCreateNewUser: boolean = false;
+  showUserList : boolean = true;
+
+  createNewUserClick(){
+    this.showCreateNewUser = !this.showCreateNewUser;
+    this.showUserList = !this.showUserList;
+  }
 
 }

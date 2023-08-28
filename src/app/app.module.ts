@@ -10,13 +10,15 @@ import { NavigationMenuComponent } from './components/navigation-menu/navigation
 import { DashboardPage } from './modules/dashboard/dashboard.page';
 import { UserComponent } from './components/user/user.component';
 import { UserListComponent } from './components/user/user-list/user-list.component';
+import { CreateNewUserComponent } from './components/user/create-new-user/create-new-user.component';
 @NgModule({
   declarations: [
     AppComponent,
     DashboardPage,
     NavigationMenuComponent,
     UserComponent,
-    UserListComponent
+    UserListComponent,
+    CreateNewUserComponent
   ],
   imports: [
     BrowserModule,

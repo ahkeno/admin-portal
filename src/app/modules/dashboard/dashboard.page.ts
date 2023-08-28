@@ -17,8 +17,8 @@ import { CoreModule } from 'src/app/core/core.module';
     onNavMenuClick(event:any){
       if( event == 'user')
       {
-        this.showUserComponent = !this.showUserComponent;
-        this. showDashboardCompoent = !this.showDashboardCompoent;
+        this.showUserComponent = true;
+        this. showDashboardCompoent = false;
       }
     }
   }

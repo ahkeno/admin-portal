@@ -1,3 +1,4 @@
 <div>
-    <app-user-list></app-user-list>
+    <app-user-list *ngIf="showUserList" (onCreate)="createNewUserClick()"></app-user-list>
+    <app-create-new-user *ngIf="showCreateNewUser"></app-create-new-user>
 </div>

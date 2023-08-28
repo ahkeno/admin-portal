@@ -1,4 +1,4 @@
-import { Component,ViewChild } from '@angular/core';
+import { Component,ViewChild,Output, EventEmitter } from '@angular/core';
 import { CoreModule } from 'src/app/core/core.module';
 import {MatTable, MatTableModule} from '@angular/material/table';
 
@@ -32,10 +32,11 @@ export class UserListComponent {
   dataSource = [...ELEMENT_DATA];
 
   @ViewChild(MatTable) table: MatTable<PeriodicElement>;
+  @Output() onCreate = new EventEmitter<string>();
 
-  addData() {
-    const randomElementIndex = Math.floor(Math.random() * ELEMENT_DATA.length);
-    this.dataSource.push(ELEMENT_DATA[randomElementIndex]);
-    this.table.renderRows();
+  addNewUser() {
+    // Create New User
+    debugger;
+    this.onCreate.emit();
   }
 }

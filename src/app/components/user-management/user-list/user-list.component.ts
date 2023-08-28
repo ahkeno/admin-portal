@@ -1,7 +1,7 @@
 import { Component,ViewChild,Output, EventEmitter } from '@angular/core';
 import {MatTable, MatTableModule} from '@angular/material/table';
 import { UserService } from 'src/app/share/services/user.service';
-import { User } from 'src/app/share/modeles/user';
+import { User } from 'src/app/share/models/user';
 
 
 @Component({

@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginPage } from '../modules/login/login.page';
 import { DashboardPage } from '../modules/dashboard/dashboard.page';
-import { UserComponent } from '../components/user/user.component';
-import { CreateNewUserComponent } from '../components/user/create-new-user/create-new-user.component';
-import { UserListComponent } from '../components/user/user-list/user-list.component';
+import { UserComponent } from '../components/user-management/user.component';
+import { CreateNewUserComponent } from '../components/user-management/create-new-user/create-new-user.component';
+import { UserListComponent } from '../components/user-management/user-list/user-list.component';
 import { RoleComponent } from '../components/role/role.component';
 const routes: Routes = [
   {

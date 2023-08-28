@@ -3,6 +3,11 @@
         <app-navigation-menu></app-navigation-menu>
     </div>
     <div class="side-component">
+        <div class="breadcrumbs">
+            <ul>
+              <li  class="cusrsor-pointer">User  </li>
+            </ul>
+          </div>
         <app-user-list *ngIf="showUserList" (onCreate)="createNewUserClick()"></app-user-list>
         <app-create-new-user *ngIf="showCreateNewUser" (onBack)="newUserBackClick()"></app-create-new-user>
     </div>

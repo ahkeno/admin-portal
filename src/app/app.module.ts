@@ -11,6 +11,9 @@ import { DashboardPage } from './modules/dashboard/dashboard.page';
 import { UserComponent } from './components/user/user.component';
 import { UserListComponent } from './components/user/user-list/user-list.component';
 import { CreateNewUserComponent } from './components/user/create-new-user/create-new-user.component';
+import { RoleComponent } from './components/role/role.component';
+import { RoleListComponent } from './components/role/role-list/role-list.component';
+import { CreateNewRoleComponent } from './components/role/create-new-role/create-new-role.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,10 @@ import { CreateNewUserComponent } from './components/user/create-new-user/create
     NavigationMenuComponent,
     UserComponent,
     UserListComponent,
-    CreateNewUserComponent
+    CreateNewUserComponent,
+    RoleComponent,
+    RoleListComponent,
+    CreateNewRoleComponent
   ],
   imports: [
     BrowserModule,

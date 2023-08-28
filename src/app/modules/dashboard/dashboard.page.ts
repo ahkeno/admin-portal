@@ -9,6 +9,8 @@ import { CoreModule } from 'src/app/core/core.module';
   export class DashboardPage {
     showUserComponent: boolean = false;
     showDashboardCompoent: boolean = true;
+    showRoleComponent : boolean = false;
+
     constructor(){}
     ngOnInit() {}
     bind(){
@@ -19,6 +21,13 @@ import { CoreModule } from 'src/app/core/core.module';
       {
         this.showUserComponent = true;
         this. showDashboardCompoent = false;
+        this.showRoleComponent = false;
+      }
+      else if( event == 'role')
+      {
+        this.showUserComponent = false;
+        this. showDashboardCompoent = false;
+        this.showRoleComponent = true;
       }
     }
   }

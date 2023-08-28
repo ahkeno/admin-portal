@@ -1,4 +1,4 @@
-import { Component,ViewChild,Output, EventEmitter } from '@angular/core';
+import { Component,Output,ViewChild,EventEmitter } from '@angular/core';
 import {MatTable, MatTableModule} from '@angular/material/table';
 
 export interface PeriodicElement {
@@ -20,20 +20,17 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];
 @Component({
-  selector: 'app-user-list',
-  templateUrl: './user-list.component.html',
-  styleUrls: ['./user-list.component.scss'],
-  
+  selector: 'app-role-list',
+  templateUrl: './role-list.component.html',
+  styleUrls: ['./role-list.component.scss']
 })
-
-export class UserListComponent {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+export class RoleListComponent {
+  displayedColumns: string[] = ['position', 'name'];
   dataSource = [...ELEMENT_DATA];
-
   @ViewChild(MatTable) table: MatTable<PeriodicElement>;
   @Output() onCreate = new EventEmitter<string>();
 
-  addNewUser() {
+  addNewRole() {
     // Create New User
     debugger;
     this.onCreate.emit();

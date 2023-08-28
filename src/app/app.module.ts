@@ -8,11 +8,15 @@ import { CoreModule }	from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationMenuComponent } from './components/navigation-menu/navigation-menu.component';
 import { DashboardPage } from './modules/dashboard/dashboard.page';
+import { UserComponent } from './components/user/user.component';
+import { UserListComponent } from './components/user/user-list/user-list.component';
 @NgModule({
   declarations: [
     AppComponent,
     DashboardPage,
-    NavigationMenuComponent
+    NavigationMenuComponent,
+    UserComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,

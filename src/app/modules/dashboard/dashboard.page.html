@@ -1,9 +1,10 @@
 <div class="dashboard-page">
     <div>
-        <app-navigation-menu></app-navigation-menu>
+        <app-navigation-menu (onMenuClick)="onNavMenuClick($event)"></app-navigation-menu>
     </div>
     <div class="side-component">
-        this is componet
+        <div *ngIf="showDashboardCompoent">this is Dashboard componet</div>
+        <app-user *ngIf="showUserComponent"></app-user>
     </div>
 </div>
 

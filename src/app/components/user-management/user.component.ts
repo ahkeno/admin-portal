@@ -8,6 +8,12 @@ import { Component, Output } from '@angular/core';
 export class UserComponent {
   showCreateNewUser: boolean = false;
   showUserList : boolean = true;
+  breadcrumbsList: any = [
+    {
+    "name": "User",
+    "link": ""
+    }
+]
 
   createNewUserClick(){
     this.showCreateNewUser = true;

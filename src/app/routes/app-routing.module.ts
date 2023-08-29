@@ -33,11 +33,13 @@ const routes: Routes = [
     children:[
       {
         path: 'new',
-        component: CreateNewUserComponent
+        component: CreateNewUserComponent,
+        pathMatch: 'full'
      },
      {
         path: 'list',
-        component: UserListComponent
+        component: UserListComponent,
+        pathMatch: 'full'
      }
     ]
   },

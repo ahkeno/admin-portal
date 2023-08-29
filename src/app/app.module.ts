@@ -19,6 +19,7 @@ import { GroupListComponent } from './components/restaurant-management/group-lis
 import { RestaurantListComponent } from './components/restaurant-management/restaurant-list/restaurant-list.component';
 import { OutletListComponent } from './components/restaurant-management/outlet-list/outlet-list.component';
 import { CreateGroupComponent } from './components/restaurant-management/create-group/create-group.component';
+
 @NgModule({
   declarations: [
     AppComponent,

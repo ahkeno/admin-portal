@@ -6,5 +6,5 @@ import { Component,EventEmitter,Output } from '@angular/core';
   styleUrls: ['./navigation-menu.component.scss'],
 })
 export class NavigationMenuComponent {
-
+  isSuperAdmin: boolean = true; // TODO: later this flag will come from API
 }

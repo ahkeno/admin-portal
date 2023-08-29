@@ -15,7 +15,6 @@ export class UserService {
       ];
     addUser(user:any) {
       const item: User = {
-        
         name: user.name,
         email: user.email,
         role: user.role

@@ -1,10 +1,4 @@
 <div class="create-new-user-component">
-  <div class="breadcrumbs">
-    <ul>
-      <li (click)="onClickBackUser()" class="cusrsor-pointer">User > </li>
-      <li>Add User</li>
-    </ul>
-  </div>
   <form [formGroup]="userPofileForm" (ngSubmit)="addNewUser(userPofileForm)">
     <div class="two-column-equal-layout">
       <div>

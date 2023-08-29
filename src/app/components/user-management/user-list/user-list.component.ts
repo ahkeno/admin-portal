@@ -1,8 +1,8 @@
-import { Component,ViewChild,Output, EventEmitter } from '@angular/core';
-import {MatTable, MatTableModule} from '@angular/material/table';
+import { Component,ViewChild, } from '@angular/core';
+import {MatTable} from '@angular/material/table';
 import { UserService } from 'src/app/share/services/user.service';
 import { User } from 'src/app/share/models/user';
-
+import { UserListTableHeader } from 'src/assets/customs/user';
 
 @Component({
   selector: 'app-user-list',
@@ -12,22 +12,15 @@ import { User } from 'src/app/share/models/user';
 })
 
 export class UserListComponent {
-  displayedColumns: string[] = [ 'name', 'email', 'role'];
+
+  displayedColumns: string[] = UserListTableHeader;
   dataSource = this.service.mock_data;
   users : any[];
   @ViewChild(MatTable) table: MatTable<User>;
-  @Output() onCreate = new EventEmitter<string>();
   constructor(public service: UserService){
 
   }
   ngOnInit() {
    
   }
- 
-  addNewUser() {
-    // Create New User
-    this.onCreate.emit();
-  }
-
-
 }

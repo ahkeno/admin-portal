@@ -1,0 +1,1 @@
+export const UserListTableHeader = ['name','email', 'role']

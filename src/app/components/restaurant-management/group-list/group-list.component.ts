@@ -13,18 +13,12 @@ export class GroupListComponent {
   displayedColumns: string[] = GroupListTableHeader;
   dataSource = this.service.mock_data;
   users : any[];
-  @ViewChild(MatTable) table: MatTable<User>;
+ 
   constructor(public service: GroupService){
 
   }
   ngOnInit() {
    
   }
-  setHeader(title:any) {
-    return title ;
-  }
-  setData(data:any, title:any) {
-    if(!title) return "Hi"
-    return data;
-  }
+  
 }

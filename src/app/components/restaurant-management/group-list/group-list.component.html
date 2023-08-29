@@ -3,11 +3,38 @@
       Add New
     </button>
   </div>
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-    <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
-      <th mat-header-cell *matHeaderCellDef> {{column}} </th>
-      <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
-    </ng-container>
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
+
+<div class="display-list">
+    <!-- Header -->
+  <div *ngFor="let title of displayedColumns" class="column-header">
+    {{title}}
+  </div>
+</div>
+   <!-- Body -->
+<div class="display-list" *ngFor="let data of dataSource">
+  <div >
+    {{data.id}}
+  </div>
+  <div >
+    {{data.name}}
+  </div>
+  <div >
+    {{data.group_name_en}}
+  </div>
+  <div >
+    {{data.group_name_mm}}
+  </div>
+  <div >
+    {{data.phone}}
+  </div>
+  <div >
+    {{data.created_date}}
+  </div>
+  <div >
+    {{data.status}}
+  </div>
+  <div >
+    {{data.num_restuarant}}
+  </div>
+</div>
+ 

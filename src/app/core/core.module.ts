@@ -8,6 +8,8 @@ import {MatTable, MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 
 // 
 import { LoginPage } from '../modules/login/login.page';
@@ -24,7 +26,9 @@ import { LoginPage } from '../modules/login/login.page';
         MatCheckboxModule,
         MatSidenavModule,
         MatMenuModule,
-        MatTableModule
+        MatTableModule,
+        MatGridListModule,
+        MatCardModule
         ],
     declarations: [],
     providers: []

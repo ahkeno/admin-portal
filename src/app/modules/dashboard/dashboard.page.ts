@@ -7,10 +7,27 @@ import { CoreModule } from 'src/app/core/core.module';
     styleUrls: ['./dashboard.page.scss'],
   })
   export class DashboardPage {
-    showUserComponent: boolean = false;
-    showDashboardCompoent: boolean = true;
-    showRoleComponent : boolean = false;
-
+    backgroundBlue = "bgblue";
+    backgroundGreen = "bggreen";
+    backgroundYellow = "bgyellow";
+    backgroundRed = "bgred";
+    //  TODO : display Data should come from API 
+    restuarantCount = {
+      number: 12,
+      title: 'Restuarant'
+    }
+    groupCount= {
+      number: 3,
+      title: 'Group'
+    }
+    groupMenu= {
+      number: 50,
+      title: 'Total Menu'
+    }
+    totalOrder= {
+      number: 141,
+      title: 'Total Order'
+    }
     constructor(){}
     ngOnInit() {}
     bind(){ }

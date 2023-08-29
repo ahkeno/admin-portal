@@ -19,6 +19,7 @@ import { GroupListComponent } from './components/restaurant-management/group-lis
 import { RestaurantListComponent } from './components/restaurant-management/restaurant-list/restaurant-list.component';
 import { OutletListComponent } from './components/restaurant-management/outlet-list/outlet-list.component';
 import { CreateGroupComponent } from './components/restaurant-management/create-group/create-group.component';
+import { NumberCardComponent } from './components/number-card/number-card.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CreateGroupComponent } from './components/restaurant-management/create-
     GroupListComponent,
     RestaurantListComponent,
     OutletListComponent,
-    CreateGroupComponent
+    CreateGroupComponent,
+    NumberCardComponent
   ],
   imports: [
     BrowserModule,

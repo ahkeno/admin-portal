@@ -11,7 +11,7 @@ import { GroupListTableHeader } from 'src/assets/customs/group';
 })
 export class GroupListComponent {
   displayedColumns: string[] = GroupListTableHeader;
-  dataSource = this.service.mock_data;
+  dataSource = this.service.mock_data; // TO DO: have to call with API load Group List
   users : any[];
  
   constructor(public service: GroupService){

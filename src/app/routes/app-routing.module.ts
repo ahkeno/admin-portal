@@ -11,6 +11,8 @@ import { RestaurantListComponent } from '../components/restaurant-management/res
 import { OutletListComponent } from '../components/restaurant-management/outlet-list/outlet-list.component';
 import { CreateGroupComponent } from '../components/restaurant-management/create-group/create-group.component';
 import { GroupListComponent } from '../components/restaurant-management/group-list/group-list.component';
+import { CreateNewRoleComponent } from '../components/role/create-new-role/create-new-role.component';
+import { RoleListComponent } from '../components/role/role-list/role-list.component';
 const routes: Routes = [
   {
     path: '',
@@ -27,7 +29,18 @@ const routes: Routes = [
   },
   {
     path: 'role',
-    component: RoleComponent
+    component: RoleComponent,
+    children:[
+      {
+        path: 'new',
+        component: CreateNewRoleComponent,
+        pathMatch: 'full'
+     },
+     {
+      path: 'list',
+      component: RoleListComponent,
+      pathMatch: 'full'
+   }]
   },
   {
     path: 'user',

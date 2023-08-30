@@ -3,8 +3,7 @@
         <app-navigation-menu></app-navigation-menu>
     </div>
     <div class="side-component">
-        <app-role-list *ngIf="showRoleList" (onRoleNewClick)="createNewClick()"></app-role-list>
-        <app-create-new-role *ngIf="showCreateNew"></app-create-new-role>
+        <router-outlet></router-outlet>
     </div>
 </div>
 

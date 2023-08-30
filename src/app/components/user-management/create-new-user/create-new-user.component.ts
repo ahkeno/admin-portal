@@ -1,6 +1,7 @@
 import { Component, Output,EventEmitter } from '@angular/core';
 import { UserService } from 'src/app/share/services/user.service';
 import { FormBuilder } from '@angular/forms';
+import { Router} from "@angular/router";
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
@@ -15,7 +16,8 @@ export class CreateNewUserComponent {
 
   constructor(
     private service: UserService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router: Router
   ){}
   ngOnInit() {
     this.userPofileForm = new FormGroup({
@@ -27,7 +29,7 @@ export class CreateNewUserComponent {
   }
   addNewUser(form: FormGroup) {
     this.service.addUser(form.value);
-    this.onBack.emit();
+    this.router.navigate(['/user/list']);
   }
   onClickBackUser(){
     this.onBack.emit();

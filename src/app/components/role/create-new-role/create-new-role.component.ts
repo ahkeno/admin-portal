@@ -16,7 +16,6 @@ export class CreateNewRoleComponent {
     } else{
       this.buttonNewState = true;
     }
-    
   }
   
 }

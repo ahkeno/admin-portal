@@ -10,7 +10,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
-
+import {MatSelectModule} from '@angular/material/select';
 // 
 import { LoginPage } from '../modules/login/login.page';
 
@@ -28,7 +28,8 @@ import { LoginPage } from '../modules/login/login.page';
         MatMenuModule,
         MatTableModule,
         MatGridListModule,
-        MatCardModule
+        MatCardModule,
+        MatSelectModule
         ],
     declarations: [],
     providers: []

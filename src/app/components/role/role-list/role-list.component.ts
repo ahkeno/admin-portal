@@ -8,7 +8,7 @@ import { RoleService } from 'src/app/share/services/role.service';
 })
 export class RoleListComponent {
   displayedColumns = RoleListHeader;
-  dataSource = this.service.mock_data; // TO DO: have to call with API load Group List
+  dataSource = this.service.mock_data; // TO DO: have to call with API load Role List
   constructor(public service: RoleService){
 
   }

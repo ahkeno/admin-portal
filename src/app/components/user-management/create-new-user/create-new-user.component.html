@@ -5,14 +5,15 @@
         <div>
           <mat-form-field class="example-full-width">
             <mat-label>Name</mat-label>
-            <input matInput formControlName="name" placeholder="Your name">
+            <input matInput formControlName="name" placeholder="Your name" required>
+            <mat-error *ngIf="name?.errors">Name is required</mat-error>
           </mat-form-field>
         </div>
         <div>
-          <!-- TO DO : check email validation -->
-        <mat-form-field class="example-full-width">
+           <mat-form-field class="example-full-width">
           <mat-label>Email</mat-label>
-          <input matInput formControlName="email" type="email"placeholder="Your name">
+          <input matInput formControlName="email" id="email" type="email" placeholder="Your Email" required>
+          <mat-error *ngIf="email?.errors">Primary email is required</mat-error>
         </mat-form-field>
         </div>
       </div>
@@ -20,19 +21,24 @@
         <div>
           <mat-form-field class="example-full-width">
             <mat-label>Password</mat-label>
-            <input matInput formControlName="password" type="password" >
+            <input matInput formControlName="password" type="password" required >
+            <mat-error *ngIf="password?.errors">password email is required</mat-error>
           </mat-form-field>
         </div>
         <div>
           <!-- TO DO : role come from role data as drop down -->
-        <mat-form-field class="example-full-width">
-          <mat-label>Role</mat-label>
-          <input matInput formControlName="role" type="text" >
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Role</mat-label>
+            <mat-select formControlName="role">
+              <mat-option *ngFor="let role of roles" [value]="role" >
+                {{role.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
         </div>
       </div>
     </div>
-   <button type="submit"mat-raised-button color="primary" >Add </button>
+   <button type="submit"mat-raised-button class="primary-button" [disabled]="userPofileForm.invalid">Add </button>
   </form>
       
 </div>

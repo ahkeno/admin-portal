@@ -20,6 +20,7 @@ import { RestaurantListComponent } from './components/restaurant-management/rest
 import { OutletListComponent } from './components/restaurant-management/outlet-list/outlet-list.component';
 import { CreateGroupComponent } from './components/restaurant-management/create-group/create-group.component';
 import { NumberCardComponent } from './components/number-card/number-card.component';
+import { TopNavigationComponent } from './components/top-navigation/top-navigation.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { NumberCardComponent } from './components/number-card/number-card.compon
     RestaurantListComponent,
     OutletListComponent,
     CreateGroupComponent,
-    NumberCardComponent
+    NumberCardComponent,
+    TopNavigationComponent
   ],
   imports: [
     BrowserModule,

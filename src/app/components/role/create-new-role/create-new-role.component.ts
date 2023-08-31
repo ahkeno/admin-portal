@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-new-role.component.scss']
 })
 export class CreateNewRoleComponent {
+  buttonNewState: boolean = true;
+  rolename: string = "";
 
+  roleNameAdd(name: any){
+    // button disable/ enable by input event
+    if (name.target.value !== ''){
+      this.buttonNewState = false;
+    } else{
+      this.buttonNewState = true;
+    }
+    
+  }
+  
 }

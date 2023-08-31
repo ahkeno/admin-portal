@@ -1,0 +1,9 @@
+.primary-button{
+    background-color: $primiary-color-purple!important;
+    color: #fff!important;
+    min-width: 236px!important;
+    padding: 20px!important;
+}
+.primary-button:disabled{
+    opacity: .7;
+}

@@ -1,0 +1,18 @@
+.display-list{   
+    div:nth-child(1){
+        text-align: left;
+    }
+}
+.display-list{
+    div{
+        inline-size: 200px;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+.gray-background{
+    border-radius: 10px;
+}
+.button-container{
+    text-align: right;
+}

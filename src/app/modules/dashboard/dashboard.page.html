@@ -3,26 +3,31 @@
         <app-navigation-menu></app-navigation-menu>
     </div>
     <div class="side-component">
-        <!-- Number of Data Card -->
-        <mat-grid-list cols="4" rowHeight="2:1">
-            <mat-grid-tile>
-                <!-- TODO : display Data should come from API -->
-                <app-number-card [bgcolor]="backgroundBlue" [displayData]="restuarantCount"></app-number-card>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <!-- TODO : display Data should come from API -->
-                <app-number-card [bgcolor]="backgroundGreen" [displayData]="groupCount"></app-number-card>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                 <!-- TODO : display Data should come from API -->
-                 <app-number-card [bgcolor]="backgroundYellow" [displayData]="groupMenu"></app-number-card>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <!-- TODO : display Data should come from API -->
-                <app-number-card [bgcolor]="backgroundRed" [displayData]="totalOrder"></app-number-card>
-            </mat-grid-tile>
-        </mat-grid-list>
+        <app-top-navigation></app-top-navigation>
+        <div class="content-component">
+          <!-- Number of Data Card -->
+            <mat-grid-list cols="4" rowHeight="2:1">
+                <mat-grid-tile>
+                    <!-- TODO : display Data should come from API -->
+                    <app-number-card [bgcolor]="backgroundBlue" [displayData]="restuarantCount"></app-number-card>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <!-- TODO : display Data should come from API -->
+                    <app-number-card [bgcolor]="backgroundGreen" [displayData]="groupCount"></app-number-card>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <!-- TODO : display Data should come from API -->
+                    <app-number-card [bgcolor]="backgroundYellow" [displayData]="groupMenu"></app-number-card>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <!-- TODO : display Data should come from API -->
+                    <app-number-card [bgcolor]="backgroundRed" [displayData]="totalOrder"></app-number-card>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+        
         
     </div>
 </div>
+
 

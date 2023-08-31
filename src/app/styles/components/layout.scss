@@ -3,8 +3,9 @@
     justify-content: space-between;
     .side-component{
         text-align: left;
-        border: 2px solid;
-        width: 77%;
+        width: 79.9%;
+    }
+    .content-component{
         padding: 20px;
     }
 }
@@ -12,4 +13,6 @@
 .two-column-equal-layout{
     display: flex;
     justify-content: space-around;
+
+    padding: 20px;
 }

@@ -9,9 +9,9 @@ import { User } from '../models/user';
 export class UserService {
     users: User[] = [];
     mock_data: User[] = [
-        { name: 'Smith', email: "Smith@test.com", role_tye:'editor'},
-        { name: 'John', email: "John@test.com", role_tye:'editor'},
-        { name: 'Adam', email: "Adam@test.com", role_tye:'editor'},
+        { name: 'Smith', email: "Smith@test.com", role:'Editor', role_type: "editor"},
+        { name: 'John', email: "John@test.com", role:'Editor', role_type: "editor"},
+        { name: 'Adam', email: "Adam@test.com", role:'Editor', role_type: "editor"},
       ];
     addUser(user:any) {
       debugger;
@@ -19,7 +19,8 @@ export class UserService {
       const item: User = {
         name: user.name,
         email: user.email,
-        role_tye: user.role.role_type
+        role:  user.role.name,
+        role_type: user.role.role_type
       }
       this.mock_data.unshift(item);
         console.log("Add new user", this.users);

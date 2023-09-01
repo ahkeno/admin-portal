@@ -1,0 +1,27 @@
+<div class="button-container">
+    <button mat-raised-button routerLink="../../role/new" class="primary-button">
+      Add New
+    </button>
+  </div>
+  <div class="display-list">
+    <!-- Header -->
+    <div *ngFor="let title of displayedColumns" class="column-header">
+      {{title}}
+    </div>
+    <div>
+      Action
+    </div>
+  </div>
+     <!-- Body -->
+  <div class="display-list" *ngFor="let data of dataSource">
+    <div>
+      {{data.name}}
+    </div>
+    <div>
+      {{data.status}}
+    </div>
+    <div>
+      <!-- TO DO action icon and action -->
+      Action icon 
+    </div>
+  </div>

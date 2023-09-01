@@ -1,0 +1,16 @@
+- successful toast message as component @done
+- create enviroment @done
+- navigation menu highlight base on click @done
+- onclick logo route back to home /dashboard @done
+-  show success first, load page later , subscriber catch
+-  breadcrumb component
+- loading component for each service call
+- unit test for each componet 
+- user management 
+    - validation for user name 
+    - validation for password and confirm password fields 
+    - validation for create role name (duplicat or existing)
+    - add function for edit user profile (from Action icon)
+    - add function for delete user profile (from Action icon)
+    - permission ?? // to disscss flow with Thinzar
+

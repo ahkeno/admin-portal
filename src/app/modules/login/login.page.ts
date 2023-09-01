@@ -5,6 +5,7 @@ import { CoreModule } from 'src/app/core/core.module';
 @Component({
     selector: 'app-login',
     templateUrl: './login.page.html',
+    styleUrls: ['./login.page.scss'],
     standalone: true,
     imports: [CoreModule]
   })

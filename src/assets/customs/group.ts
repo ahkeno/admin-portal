@@ -1,0 +1,1 @@
+export const GroupListTableHeader = ['Restuarant Id','name','Group Name(EM)', 'Group Name(MM)','Phone','Created Date','Status','Number of Restuarant']

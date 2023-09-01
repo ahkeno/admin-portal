@@ -1,0 +1,48 @@
+<div class="create-new-user-component">
+  <form [formGroup]="userPofileForm" (ngSubmit)="addNewUser(userPofileForm)">
+    <div class="two-column-equal-layout">
+      <div>
+        <div>
+          <!-- Name -->
+          <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" placeholder="Your name" required>
+            <mat-error *ngIf="name?.errors">Name is required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <!-- Email -->
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" id="email" type="email" placeholder="Your Email" required>
+            <mat-error *ngIf="email?.errors">Primary email is required</mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div>
+        <div>
+          <!-- Password -->
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" type="password" required >
+            <mat-error *ngIf="password?.errors">password email is required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <!-- TO DO add retype password -->
+          
+          <mat-form-field>
+            <mat-label>Role</mat-label>
+            <mat-select formControlName="role">
+              <mat-option *ngFor="let role of roles" [value]="role" >
+                {{role.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+   <button type="submit"mat-raised-button class="primary-button" [disabled]="userPofileForm.invalid">Add </button>
+  </form>
+      
+</div>

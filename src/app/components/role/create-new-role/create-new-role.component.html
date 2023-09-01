@@ -1,0 +1,9 @@
+<form class="create-new-role-form">
+    <mat-form-field class="full-width">
+      <mat-label>Role Name</mat-label>
+      <input type="text" matInput placeholder="admin" [ngModel]="rolename" (focusout)="roleNameAdd($event)">
+      <mat-hint>Role Name should be unique!</mat-hint>
+    </mat-form-field>
+    <button mat-raised-button class="primary-button" [disabled]="buttonNewState">Add </button>
+  </form>
+ 

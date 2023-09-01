@@ -1,0 +1,21 @@
+app-login{
+   
+}
+.login_form_page{
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+    height: 99%;
+	margin: 0;
+
+    .logo img{
+        width: 200px;
+    }
+    
+    .login-form{
+        float: right;
+        margin: 10%;
+    }
+}

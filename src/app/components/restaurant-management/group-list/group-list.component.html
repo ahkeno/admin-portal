@@ -1,0 +1,40 @@
+<div class="button-container">
+    <button mat-raised-button routerLink="./../../group/new" class="primary-button">
+      Add New
+    </button>
+  </div>
+
+<div class="display-list ">
+    <!-- Header -->
+  <div *ngFor="let title of displayedColumns" class="column-header">
+    {{title}}
+  </div>
+</div>
+ <!-- Body -->
+<div class="display-list" *ngFor="let data of dataSource">
+  <div >
+    {{data.id}}
+  </div>
+  <div >
+    {{data.name}}
+  </div>
+  <div >
+    {{data.group_name_en}}
+  </div>
+  <div >
+    {{data.group_name_mm}}
+  </div>
+  <div >
+    {{data.phone}}
+  </div>
+  <div >
+    {{data.created_date}}
+  </div>
+  <div >
+    {{data.status}}
+  </div>
+  <div >
+    {{data.num_restuarant}}
+  </div>
+</div>
+ 

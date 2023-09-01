@@ -1,5 +1,10 @@
-<div class="login_form">
+<div class="login_form_page">
+  
+  
   <form class="login-form">
+    <div class="logo">
+      <img src="./../../../assets/images/uablogo.png">
+    </div>
    <div class="input-full-width">
       <mat-form-field>
         <mat-label>Input</mat-label>
@@ -15,8 +20,9 @@
       </button>
     </mat-form-field>
   </div>
+  <button mat-raised-button class="primary-button" (click)="onLogin()">Login</button>
   </form>
+  
 </div>
 
 
-<button (click)="onLogin()">Login</button>

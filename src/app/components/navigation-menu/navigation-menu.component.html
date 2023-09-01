@@ -1,0 +1,61 @@
+<div class="navigation-menu">
+  <div class="logo" routerLink="/dashboard">
+    <img src="https://placehold.co/50"/>
+  </div>
+  <div class="user-info">
+    <div>
+     <img src="https://placehold.co/50"/>
+      <span class="user-name">User Name</span>
+    </div>
+  </div>
+  <div class="search-bar">
+    <input type="text">
+  </div>
+  <div class="navigation-list">
+    <ul class="main-menu" *ngIf="isSuperAdmin">
+      <!-- TO DO: menu list come from  -->
+      <li routerLinkActive="active" routerLink="/dashboard" >Dashboard</li>
+      <li >Admin User Management
+        <ol>
+          <li routerLinkActive="active" routerLink="/user/list">
+            User
+          </li>
+          <li routerLinkActive="active" routerLink="/role/list">
+            Roles 
+          </li>
+          <li>
+            Permission
+          </li>
+        </ol>
+      </li>
+
+      <li >
+        Restaurant Managers 
+        <ol>
+          <li routerLinkActive="active" routerLink="/restaurant/group/list">
+            Groups
+          </li>
+          <li routerLinkActive="active" routerLink="/restaurant/list">
+            Restaurant
+          </li>
+          <li routerLinkActive="active" routerLink="/restaurant/outlet/list">
+            Outlet
+          </li>
+        </ol>
+      </li>
+      <li *ngIf="isSuperAdmin">Settings</li>
+        <ol>
+          <li>
+            Restaurant Type
+          </li>
+          <li>
+            Discount
+          </li>
+          <li>
+            Cuisine Type 
+          </li>
+        </ol>
+    </ul>
+
+  </div>
+</div>

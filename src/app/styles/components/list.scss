@@ -1,0 +1,17 @@
+.display-list{
+    display: flex;
+    justify-content: normal-between;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000000;
+    padding: 11px;
+    margin: 13px 0;
+    text-align: left;
+    div{
+        text-align: left;
+        min-width: 130px;
+        inline-size: 130px; 
+        overflow: hidden;;
+    }
+    
+}

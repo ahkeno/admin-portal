@@ -4,7 +4,7 @@
   </button>
 </div>
 
-<div class="display-list header">
+<div class="display-list ">
   <!-- Header -->
   <div *ngFor="let title of displayedColumns" class="column-header">
     {{title | titlecase}}
@@ -27,7 +27,11 @@
     </div>
     <div >
       <!-- TO DO: action icon and event -->
-      Action icon  
+      <ul class="action-list">
+        <li class="view-user"><img src="./../../../../assets/icons/view-icon.png"></li>
+        <li class="edit-user"><img src="./../../../../assets/icons/edit-icon.png"></li>
+        <li class="delete-user"><img src="./../../../../assets/icons/delete-icon.png"></li>
+      </ul>
     </div>
   </div>
 </section>

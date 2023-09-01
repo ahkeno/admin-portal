@@ -14,7 +14,6 @@ export class UserService {
         { name: 'Adam', email: "Adam@test.com", role:'Editor', role_type: "editor"},
       ];
     addUser(user:any) {
-      debugger;
       // TO DO: this payload should generate for API payload
       const item: User = {
         name: user.name,

@@ -3,6 +3,7 @@
     <div class="two-column-equal-layout">
       <div>
         <div>
+          <!-- Name -->
           <mat-form-field class="example-full-width">
             <mat-label>Name</mat-label>
             <input matInput formControlName="name" placeholder="Your name" required>
@@ -10,15 +11,17 @@
           </mat-form-field>
         </div>
         <div>
-           <mat-form-field class="example-full-width">
-          <mat-label>Email</mat-label>
-          <input matInput formControlName="email" id="email" type="email" placeholder="Your Email" required>
-          <mat-error *ngIf="email?.errors">Primary email is required</mat-error>
-        </mat-form-field>
+          <!-- Email -->
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" id="email" type="email" placeholder="Your Email" required>
+            <mat-error *ngIf="email?.errors">Primary email is required</mat-error>
+          </mat-form-field>
         </div>
       </div>
       <div>
         <div>
+          <!-- Password -->
           <mat-form-field class="example-full-width">
             <mat-label>Password</mat-label>
             <input matInput formControlName="password" type="password" required >
@@ -26,7 +29,8 @@
           </mat-form-field>
         </div>
         <div>
-          <!-- TO DO : role come from role data as drop down -->
+          <!-- TO DO add retype password -->
+          
           <mat-form-field>
             <mat-label>Role</mat-label>
             <mat-select formControlName="role">

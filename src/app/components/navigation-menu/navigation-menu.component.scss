@@ -9,14 +9,27 @@
     min-width: 250px;
     ul li{
         cursor: pointer;
+        list-style: none;
+        padding: 10px 0;
     }
-    .logo img{
-        border-radius: 50%;
+    
+    ul>li.active, ol>li.active{
+        color: #fff;
+    }
+    .logo 
+    {   
+        cursor: pointer;
+        text-align: center;
+        padding: 25px;
     }
     .user-info {
+        margin: 10px;
         img{
         border-radius: 50%;
         vertical-align:middle
+        }
+        .user-name{
+            padding: 0 10px;
         }
     }
     .search-bar input[type="text"]{

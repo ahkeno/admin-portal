@@ -1,9 +1,14 @@
 .two-column-layout{
     display: flex;
-    justify-content: space-between;
-    .side-component{
+
+    .left-container{
+        width: 20%;
+        flex-grow:3;
+    }
+    .right-component{
         text-align: left;
         width: 79.9%;
+        flex-grow:2;
     }
     .content-component{
         padding: 20px;
@@ -13,6 +18,5 @@
 .two-column-equal-layout{
     display: flex;
     justify-content: space-around;
-
     padding: 20px;
 }

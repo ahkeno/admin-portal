@@ -68,20 +68,22 @@ const routes: Routes = [
         pathMatch: 'full'
      },
      {
-        path: 'list',
+        path: 'group/list',
         component: GroupListComponent,
         pathMatch: 'full'
-     }
+     },
+     {
+      path: 'list',
+      component: RestaurantListComponent
+    },
+    {
+      path: 'outlet/list',
+      component: OutletListComponent
+    },
     ]
   },
-  {
-    path: 'restaurant/list',
-    component: RestaurantListComponent
-  },
-  {
-    path: 'outlet/list',
-    component: OutletListComponent
-  },
+  
+  
 ];
 
 @NgModule({

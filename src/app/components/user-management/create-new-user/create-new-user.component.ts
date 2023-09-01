@@ -4,6 +4,9 @@ import { FormBuilder } from '@angular/forms';
 import { Router} from "@angular/router";
 import { FormGroup, FormControl,Validators } from '@angular/forms';
 import { RoleService } from 'src/app/share/services/role.service';
+import { ToastService } from 'src/app/share/services/toast.service';
+
+
 @Component({
   selector: 'app-create-new-user',
   templateUrl: './create-new-user.component.html',
@@ -22,7 +25,7 @@ export class CreateNewUserComponent {
   constructor(
     private service: UserService,
     private roleService: RoleService,
-    private fb: FormBuilder,
+    private toastService: ToastService,
     private router: Router
   ){}
   roles = this.roleService.mock_data; // TO DO: have to call with API load Role List
@@ -42,9 +45,13 @@ export class CreateNewUserComponent {
 
 
   addNewUser(form: FormGroup) {
-    debugger;
     this.service.addUser(form.value);
     // TO DO: show notification for successful add form
+    this.toastService.add({
+      type: 'success',
+      title: 'User added',
+      message: '',
+    });
     this.router.navigate(['/user/list']);
   }
   onClickBackUser(){
